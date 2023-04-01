@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+
+int main()
+{
+  
+    char name[50];
+    float basic,hra,da,pf,gross;
+    
+    printf("\n Enter the name of employee = ");
+    scanf("%s",&name);
+    
+    printf("\n enter the basic salary = ");
+    scanf("%f",&basic);
+    printf("\n enter the hrs = ");
+    scanf("%f",&hra);
+    printf("\n Enter D.A = ");
+    scanf("%f",&da);
+    
+    // PF automatic  calculation 12%
+    
+    pf=(basic*12)/100;
+    
+    gross=basic+da+hra+pf;
+    
+    printf("\n Name = %s,\n Basic = %f, \n Hra= %f, \n Da = %f , \n pf = %f, \n gross salary =%f",&name,basic,hra,da,pf,gross);
+    return 0;
+    
+}
+    
