@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+    
+    int day,year,month,nd;
+    printf("\n Enter the number of days = ");
+    scanf("%d",&day);
+    year=day/365;
+    day=day%365;
+    month=day/30;
+    nd=day%30;
+    printf("\n %d year, %d month, %d day",year,month,nd);
+    
+    return 0;
+}
