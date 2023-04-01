@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+  
+   float cl,fh;
+   int choice;
+   
+   printf("\n Convert the temperature in celsius = ");
+   printf("\n Convert the temperature in farenheit =  ");
+   printf("Enter your choice (1 or 2) =  ");
+   scanf("%d",&choice);
+   
+   if(choice==1)
+   {
+       printf("\n Enter the temperature in farenheit = ");
+       scanf("%f",&fh);
+       cl=(fh-32)/1.8;
+       printf("\n temperature in celsius %f",cl);
+       
+   }
+   else if(choice==2)
+   {
+       printf("\n Enter the temperature in celsius = ");
+       scanf("%f",&cl);
+       fh=(cl*1.8)+32;
+       printf("\n temperature in farenheit %f",fh);
+       
+   }
+   else
+   {
+       printf("\n invalid Choice");
+   }
+    
+    return 0;
+    
+}
