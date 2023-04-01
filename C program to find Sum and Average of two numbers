@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+    int a,b,sum;
+    float avg;
+    
+    printf("\n Enter the value of a = ");
+    scanf("%d",&a);
+    printf("\n Enter the value of b = ");
+    scanf("%d",&b);
+    sum=a+b;
+    avg=(a+b)/2;
+    printf("\n sum of a & b = %d",sum);
+    printf("\n AVG of a & b = %f",avg);
+    
+    return 0;
+    
+    
+    
+}
