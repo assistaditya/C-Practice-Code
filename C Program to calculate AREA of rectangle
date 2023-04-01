@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+  
+    int l,b;
+    int area;
+    printf("\n Enter  the length of rectangle = ");
+    scanf("%d",&l);
+    printf("\n Enter the breadth of retangle = ");
+    scanf("%d",&b);
+    area=l*b;
+    printf("\n The area of rectangle = %d ",area);
+    return 0;
+    
+    
+}
