@@ -1,0 +1,47 @@
+#include<stdio.h>
+#include<conio.h>
+#include<limits.h>
+#define MAX_SIZE 1000
+
+int main()
+{
+    int arr[MAX_SIZE];
+    int n,i,max1,max2;
+    
+    printf("\n Enter the size of an array = ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("\n Enter the array number at %d position = ",i);
+        scanf("%d",&arr[i]);
+    }
+    
+    printf("\n array elements are ");
+    for(i=0;i<n;i++)
+    {
+        printf("\t %d",arr[i]);
+    }
+    
+    max1=max2= INT_MIN;
+    
+    for(i=0;i<n;i++)
+    {
+        if(arr[i]>max1)
+        {
+        
+        max2=max1;
+        max1=arr[i];
+        }
+        else if(arr[i]>max2)
+        {
+            max2=arr[i];
+        }
+    }
+    
+    printf("\n first largest no = %d",max1);
+    printf("\n second largest no= %d",max2);
+    
+    return 0;
+    
+    
+}
