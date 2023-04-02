@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+#include<limits.h>
+#define MAX_SIZE 1000
+
+int main()
+{
+    int arr1[MAX_SIZE],arr2[MAX_SIZE];
+    int i,n;
+    printf("\n Enter the size of an arry ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("\n array elements at %d position = ",i);
+        scanf("%d",&arr1[i]);
+    }
+    
+    printf("\n Array elments are of array1 =");
+    for(i=0;i<n;i++)
+    {
+        printf("\t %d",arr1[i]);
+    }
+    
+    printf("\n Array elments are of array2 =");
+    for(i=0;i<n;i++)
+    {
+        arr2[i]=arr1[i];
+        printf("\t %d",arr2[i]);
+    }
+    return 0;
+}
