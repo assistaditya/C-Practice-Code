@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<conio.h>
+#include<limits.h>
+#define MAZ_SIZE 1000
+
+int main()
+
+{
+    int arr[MAZ_SIZE];
+    int n,i,pos,x;
+    
+    printf("\n enter the size o an array.");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("\n enter the elments in array at %d position = ",i);
+        scanf("%d",&arr[i]);
+    }
+    
+    printf("\n array elemnts are");
+    for(i=0;i<n;i++)
+    {
+        printf("\t %d",arr[i]);
+    }
+    
+    printf("\n enetr the number to be inserted into an array = ");
+    scanf("%d",&x);
+    printf("\n enetr the position  at which element to insert = ");
+    scanf("%d",&pos);
+    n++;
+    
+    for(i=n-1;i>=pos;i--)
+    arr[i]=arr[i-1];
+    
+    arr[pos-1]=x;
+    
+     printf("\n array elemnts are");
+    for(i=0;i<n;i++)
+    {
+        printf("\t %d",arr[i]);
+    }
+    
+    return 0;
+    
+}
